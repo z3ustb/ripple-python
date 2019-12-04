@@ -7,8 +7,9 @@ See also:
 """
 
 import hashlib
+import six
 from binascii import hexlify
-from ecdsa import curves, SigningKey, six
+from ecdsa import curves, SigningKey
 from ecdsa.util import sigencode_der
 from .serialize import (
     to_bytes, from_bytes, RippleBaseDecoder, serialize_object, fmt_hex)
